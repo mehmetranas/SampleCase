@@ -1,15 +1,19 @@
 import { useCallback } from "react";
 import { useLocation } from "react-router-dom";
+import LanguageDropdown from "../LanguageDropdown";
+import { useTranslation } from "react-i18next";
 import UserInfo from "../UserInfo";
+import logo from "../../assets/images/react-small.png";
 
 function Header() {
+  const { t } = useTranslation();
   let { pathname } = useLocation();
 
   const HeaderName = useCallback(() => {
     if (pathname.startsWith("/contact")) {
-      return <p>Contact Page</p>;
+      return <p>{t("contact-page")}</p>;
     } else {
-      return <p>Home Page</p>;
+      return <p>{t("home-page")}</p>;
     }
   }, [pathname]);
 
@@ -20,7 +24,7 @@ function Header() {
           <div className="w-10 h-10 relative flex justify-center items-center">
             <img
               className="absolute rounded-full"
-              src="/assets/images/react-small.png"
+              src={logo}
               alt="Funny React"
             />
           </div>
@@ -31,6 +35,7 @@ function Header() {
         <div className="flex items-center">
           <div className="ml-2 flex justify-center items-center mx-3">
             <UserInfo />
+            <LanguageDropdown />
           </div>
           <div className="w-10 h-10 relative flex justify-center items-center">
             <div className="shadow-inner absolute inset-0 rounded-full"></div>

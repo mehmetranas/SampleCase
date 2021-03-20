@@ -1,7 +1,8 @@
 import { useHistory } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import logo from "../../logo.svg";
-
 function DialogBox() {
+  const { t } = useTranslation();
   const history = useHistory();
   return (
     <dialog
@@ -26,11 +27,7 @@ function DialogBox() {
               <div className="p-2 h-48 overflow-y-auto rounded-b-xl rounded-tr-xl">
                 <div>
                   <p className="text-xl text-gray-500 line-clamp-3">
-                    React, interaktif kullanıcı arayüzü geliştirmeyi zahmetsiz
-                    hale getirir. Siz uygulamanızdaki her durum için basit
-                    sayfalar tasarlayın. React, veriniz değiştiğinde sadece
-                    doğru bileşenleri verimli bir şekilde güncellesin ve
-                    oluştursun.
+                    {t("main-text")}
                   </p>
                 </div>
               </div>
@@ -41,7 +38,7 @@ function DialogBox() {
                 onClick={() => history.push("/contact")}
                 className="focus:outline-none text-yellow-500 text-sm py-2.5 px-5 rounded-md hover:bg-yellow-100"
               >
-                Let's Contact Us
+                {t("lets-contact")}
               </button>
             </div>
           </div>
