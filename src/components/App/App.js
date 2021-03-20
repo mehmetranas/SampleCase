@@ -1,10 +1,24 @@
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import HomePage from "../../Pages/HomePage";
+import ContactPage from "../../Pages/ContactPage";
+import Layout from "../../Layout";
+
 import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <p className="text-4xl">Hello World!</p>
-    </div>
+    <Router>
+      <Layout>
+        <Switch>
+          <Route exact path="/">
+            <HomePage />
+          </Route>
+          <Route path="/contact">
+            <ContactPage />
+          </Route>
+        </Switch>
+      </Layout>
+    </Router>
   );
 }
 
