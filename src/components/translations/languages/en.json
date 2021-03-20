@@ -3,5 +3,14 @@
   "login": "Login",
   "contact-page": "Contact Page",
   "home-page": "Home Page",
-  "main-text": "React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes."
+  "main-text": "React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.",
+  "name-text": "Please input your name!",
+  "email-text": "Please input your email!",
+  "name-placeholder": "Name",
+  "email-placeholder": "Email",
+  "password-text": "Please input your Password!",
+  "password-placeholder": "Password",
+  "cancel": "Cancel",
+  "email-validation": "The input is not valid E-mail!",
+  "logout": "Logout"
 }

@@ -3,5 +3,14 @@
   "contact-page": "Iletişim",
   "login": "Giriş",
   "home-page": "Ana Sayfa",
-  "main-text": "React, interaktif kullanıcı arayüzü geliştirmeyi zahmetsiz hale getirir. Siz uygulamanızdaki her durum için basit sayfalar tasarlayın. React, veriniz değiştiğinde sadece doğru bileşenleri verimli bir şekilde güncellesin ve oluştursun."
+  "main-text": "React, interaktif kullanıcı arayüzü geliştirmeyi zahmetsiz hale getirir. Siz uygulamanızdaki her durum için basit sayfalar tasarlayın. React, veriniz değiştiğinde sadece doğru bileşenleri verimli bir şekilde güncellesin ve oluştursun.",
+  "name-text": "Lütfen isminizi giriniz",
+  "email-text": "Lütfen mail adresinizi girin",
+  "name-placeholder": "Isim",
+  "email-placeholder": "Mail",
+  "password-text": "Lütfen şifrenizi girin",
+  "password-placeholder": "Şifre",
+  "cancel": "Iptal",
+  "email-validation": "Lütfen geçerli mail adresi giriniz",
+  "logout": "Çıkış"
 }

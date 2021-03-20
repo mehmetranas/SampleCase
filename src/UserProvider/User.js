@@ -5,10 +5,10 @@ const UserContext = createContext();
 function userReducer(state, action) {
   switch (action.type) {
     case "login": {
-      return { name: "Mehmet" };
+      return { user: { ...action.payload } };
     }
     case "logout": {
-      return {};
+      return { user: {} };
     }
     default: {
       throw new Error(`Unhandled action type: ${action.type}`);

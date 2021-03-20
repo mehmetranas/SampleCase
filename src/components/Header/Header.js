@@ -37,9 +37,6 @@ function Header() {
             <UserInfo />
             <LanguageDropdown />
           </div>
-          <div className="w-10 h-10 relative flex justify-center items-center">
-            <div className="shadow-inner absolute inset-0 rounded-full"></div>
-          </div>
         </div>
       </div>
     </div>
