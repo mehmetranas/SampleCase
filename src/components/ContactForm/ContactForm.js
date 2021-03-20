@@ -4,13 +4,15 @@ import { useTranslation } from "react-i18next";
 import { useAuth } from "../../UserProvider/User";
 import { UserOutlined, PhoneOutlined, MailOutlined } from "@ant-design/icons";
 import { countryList } from "../../mockData/data";
-
+import { useHistory } from "react-router-dom";
 function ContactForm() {
+  const history = useHistory();
   const { t } = useTranslation();
   const [form] = Form.useForm();
   const { state } = useAuth();
   function handleSubmit(values) {
     console.log(`Contact Form is ${JSON.stringify(values, null, 2)}`);
+    form.resetFields();
   }
   return (
     <div className="w-full">
@@ -94,10 +96,15 @@ function ContactForm() {
           <Input.TextArea rows={4} placeholder={t("message-placeholder")} />
         </Form.Item>
 
-        <Form.Item style={{ textAlign: "right" }}>
-          <Button type="primary" htmlType="submit">
-            {t("send")}
-          </Button>
+        <Form.Item>
+          <div className="flex justify-between align-middle">
+            <Button type="link" onClick={() => history.push("/")}>
+              {t("back")}
+            </Button>
+            <Button type="primary" htmlType="submit">
+              {t("send")}
+            </Button>
+          </div>
         </Form.Item>
       </Form>
     </div>

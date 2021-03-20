@@ -7,7 +7,7 @@ import { useAuth } from "../../UserProvider/User";
 function LoginForm({ signIn }) {
   const { t } = useTranslation();
   const [form] = Form.useForm();
-  const { state, dispatch } = useAuth();
+  const { dispatch } = useAuth();
   function handleSignUser(values) {
     dispatch({ type: "login", payload: values });
   }

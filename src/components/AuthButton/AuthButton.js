@@ -1,13 +1,8 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Modal } from "antd";
-import styled from "styled-components";
 import LoginForm from "../LoginForm";
-
-const FooterText = styled.p`
-  font-size: 0.8em !important;
-  color: ffffff90 !important;
-`;
+import LanguageDropdown from "../LanguageDropdown";
 
 function AuthButton() {
   const { t } = useTranslation();
@@ -26,7 +21,11 @@ function AuthButton() {
         destroyOnClose
         title={t("login")}
         visible={openModal}
-        footer={[<FooterText>React Framework</FooterText>]}
+        footer={[
+          <div key="language" className="flex justify-start align-middle">
+            <LanguageDropdown hideArrow={false} isFlag={false} />
+          </div>,
+        ]}
         cancelText={t("cancel")}
         onCancel={() => setOpenModal(false)}
       >

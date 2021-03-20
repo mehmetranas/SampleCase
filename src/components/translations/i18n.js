@@ -12,6 +12,11 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
+    detection: {
+      order: ["navigator"],
+    },
+    fallbackLng: "en",
+    whitelist: ["tr", "en"],
     resources: {
       en: {
         translation: TRANSLATIONS_EN,
@@ -21,5 +26,3 @@ i18n
       },
     },
   });
-
-i18n.changeLanguage("tr");

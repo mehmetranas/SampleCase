@@ -19,6 +19,7 @@
   "message-placeholder": "Your message",
   "cancel": "Cancel",
   "send": "Send",
+  "back": "Back",
   "email-validation": "The input is not valid E-mail!",
   "logout": "Logout",
   "contact-title": "Contact Information",
