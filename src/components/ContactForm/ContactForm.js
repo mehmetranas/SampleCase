@@ -25,11 +25,11 @@ function ContactForm() {
       >
         <Form.Item
           name="userName"
+          initialValue={state.user?.userName}
           rules={[{ required: true, message: t("name-text") }]}
         >
           <Input
             prefix={<UserOutlined />}
-            defaultValue={state.user?.userName}
             placeholder={t("name-placeholder")}
           />
         </Form.Item>
@@ -42,9 +42,9 @@ function ContactForm() {
             },
             { required: true, message: t("email-text") },
           ]}
+          initialValue={state.user?.userEmail}
         >
           <Input
-            defaultValue={state.user?.userEmail}
             prefix={<MailOutlined />}
             placeholder={t("email-placeholder")}
           />
