@@ -1,7 +1,14 @@
 import React from "react";
+import AuthButton from "../AuthButton";
+import { useAuth } from "../../UserProvider/User";
 
 function UserInfo() {
-  return <div>Mehmet Sait</div>;
+  const { state } = useAuth();
+  if (state.name) {
+    return <p>{state.name}</p>;
+  }
+
+  return <AuthButton />;
 }
 
 export default UserInfo;

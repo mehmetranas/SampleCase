@@ -1,6 +1,7 @@
 {
   "lets-contact": "Bizimle Iletişime Geçin",
   "contact-page": "Iletişim",
+  "login": "Giriş",
   "home-page": "Ana Sayfa",
   "main-text": "React, interaktif kullanıcı arayüzü geliştirmeyi zahmetsiz hale getirir. Siz uygulamanızdaki her durum için basit sayfalar tasarlayın. React, veriniz değiştiğinde sadece doğru bileşenleri verimli bir şekilde güncellesin ve oluştursun."
 }

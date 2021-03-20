@@ -15,7 +15,7 @@ function Header() {
     } else {
       return <p>{t("home-page")}</p>;
     }
-  }, [pathname]);
+  }, [pathname, t]);
 
   return (
     <div className="antialiased w-full">
