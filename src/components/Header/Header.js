@@ -3,6 +3,7 @@ import { useLocation, Link } from "react-router-dom";
 import LanguageDropdown from "../LanguageDropdown";
 import { useTranslation } from "react-i18next";
 import UserInfo from "../UserInfo";
+import NavigationBar from "../NavigationBar";
 import logo from "../../assets/images/react-small.png";
 
 function Header() {
@@ -29,6 +30,7 @@ function Header() {
           <div className="mx-auto">
             <HeaderName />
           </div>
+          <NavigationBar />
         </div>
         <div className="flex items-center">
           <div className="ml-2 flex justify-center items-center mx-3">

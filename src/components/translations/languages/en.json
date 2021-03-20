@@ -20,6 +20,8 @@
   "cancel": "Cancel",
   "send": "Send",
   "back": "Back",
+  "home": "Home",
+  "contact": "Contact",
   "email-validation": "The input is not valid E-mail!",
   "logout": "Logout",
   "contact-title": "Contact Information",
