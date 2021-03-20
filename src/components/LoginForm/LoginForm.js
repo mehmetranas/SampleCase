@@ -55,12 +55,7 @@ function LoginForm({ signIn }) {
       </Form.Item>
 
       <Form.Item style={{ textAlign: "right" }}>
-        <Button
-          type="primary"
-          htmlType="submit"
-          className="login-form-button"
-          //   onClick={handleSignUser}
-        >
+        <Button type="primary" htmlType="submit">
           {t("login")}
         </Button>
       </Form.Item>

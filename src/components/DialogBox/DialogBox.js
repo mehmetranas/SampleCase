@@ -25,11 +25,9 @@ function DialogBox() {
             </div>
             <div className="relative">
               <div className="p-2 h-48 overflow-y-auto rounded-b-xl rounded-tr-xl">
-                <div>
-                  <p className="text-xl text-gray-500 line-clamp-3">
-                    {t("main-text")}
-                  </p>
-                </div>
+                <p className="text-xl text-gray-500 line-clamp-3">
+                  {t("main-text")}
+                </p>
               </div>
             </div>
             <div className="flex justify-end">
