@@ -20,7 +20,7 @@ const CustomSelect = styled(Select)(({ hidearrow }) => {
   }
 });
 
-function LanguageDropdown({ isFlag = true, hideArrow = true }) {
+function LanguageDropdown({ isFlag = true, hideArrow = true, className }) {
   const { i18n } = useTranslation();
   function getLanguage() {
     return i18n.languages.includes(i18n.language) ? i18n.language : "en";
@@ -39,6 +39,7 @@ function LanguageDropdown({ isFlag = true, hideArrow = true }) {
         onChange={changeLanguage}
         value={getLanguage()}
         bordered={false}
+        className={className}
       >
         {LanguagesImplementations.map(({ flag, value }) => (
           <Select.Option key={value} value={value}>

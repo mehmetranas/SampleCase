@@ -4,7 +4,7 @@ import { Modal } from "antd";
 import LoginForm from "../LoginForm";
 import LanguageDropdown from "../LanguageDropdown";
 
-function AuthButton() {
+function AuthButton({ isMobile }) {
   const { t } = useTranslation();
   const [openModal, setOpenModal] = useState(false);
 
@@ -13,7 +13,9 @@ function AuthButton() {
       <button
         type="button"
         onClick={() => setOpenModal(true)}
-        className="focus:outline-none text-blue-900 text-sm py-2.5 px-5 rounded-md hover:bg-blue-50"
+        className={`focus:outline-none text-blue-900 text-sm py-2.5 px-5  hover:bg-blue-50 ${
+          isMobile ? "w-full bg-gray-200" : "rounded-md"
+        }`}
       >
         {t("login")}
       </button>

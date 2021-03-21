@@ -1,10 +1,16 @@
-import Header from "../components/Header";
+import MobileHeader from "../components/MobileHeader";
+import DesktopHeader from "../components/DesktopHeader";
 
 function Layout({ children }) {
   return (
     <>
       <header>
-        <Header />
+        <div className="hidden md:block">
+          <DesktopHeader />
+        </div>
+        <div className="block md:hidden">
+          <MobileHeader />
+        </div>
       </header>
       <main>
         <div className="bg-black bg-opacity-80">
